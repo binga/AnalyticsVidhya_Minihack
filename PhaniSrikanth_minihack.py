@@ -43,8 +43,8 @@ dtrain = xgb.DMatrix(X_train[features], X_train['Surge_Pricing_Type'], missing=n
 dtest = xgb.DMatrix(X_test[features], missing=np.nan)
 
 
-nrounds = 1000
-bst = xgb.cv(params, dtrain, num_boost_round=nrounds, nfold=5, early_stopping_rounds=100, verbose_eval=True)
+# nrounds = 1000
+# bst = xgb.cv(params, dtrain, num_boost_round=nrounds, nfold=5, early_stopping_rounds=100, verbose_eval=True)
 
 
 nrounds = 260
